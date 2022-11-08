@@ -7,6 +7,11 @@ form.onsubmit = function(event) {
   
   const weight = inputWeight.value
   const height = inputHeight.value
-  
-  console.log(weight, height)
+
+  const result = IMC(weight, height)
+  console.log(result)
+}
+
+function IMC(weight, height) {
+  return(weight / ((height/100)**2)).toFixed(2)
 }

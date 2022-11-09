@@ -21,6 +21,9 @@ form.onsubmit = event => {
   modalWapper.classList.add('open')
 }
 
+modalBtnClose.onclick = () => {
+  modalWapper.classList.remove('open')
+}
 function IMC(weight, height) {
   return(weight / ((height/100)**2)).toFixed(2)
 }
